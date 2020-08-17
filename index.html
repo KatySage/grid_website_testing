@@ -1,124 +1,57 @@
 <!doctype html>
 <html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
-    <title>Working with CSS</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Stylesheet Link -->
-    <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-    <header class="header">
-        <h1>Getting Started with CSS (this is an H1)</h1>
-    </header>
-    <main>
-        <div class="wrapper">
-            <section>
-                <h2>Section 1 (this is an h2)</h2>
-                <ul>
-                    <li>THIS IS AN UNORDERED LIST</li>
-                    <li>User Agent Stylesheets: Browsers gonna browser...</li>
-                    <li>Order matters, recent rules override prior rules.</li>
-                    <li>Specificity FTW! It can override <em>everything</em></li>
-                    <li>Selectors read from left->right</li>
-                    <li>TRBL: Top Right Bottom Left
-                        <ul>
-                            <span class="code">{ padding: 14px 8px 16px 8px; }</span>
-                        </ul>
-                    </li>
-                    <li>Selector Fight!
-                        <ul>Element Selectors vs Class Selectors vs IDs</ul>
-                    </li>
-                </ul>
-                <hr />
-                <ol>
-                    <li>THIS LIST IS ORDERED</li>
-                    <li>See?</li>
-                    <li>The numbers increment!</li>
-                </ol>
-            </section>
-            <section>
-                <h2>Section 2</h2>
-                <h3>Display Properties (this is an h3)</h3>
-                <ul>
-                    <li>Inline: Default behavior for elements (it's usually reset to "block" by browsers*).
-                        <ul>
-                            <li>Doesn't break the flow, stays inline</li>
-                            <li>Margin and Padding can be applied</li>
-                            <li>Height and Width <em>are ignored</em></li>
-                        </ul>
-                    </li>
-                    <li>Inline-Block: Similar to inline but it respects width and height values.</li>
-                    <li>Block: Are not inline, more like "stacked." If a width isn't set, they'll take up the full width
-                        by default</li>
-                </ul>
-                <p>
-                    * <strong>USER AGENT STYLESHEETS: </strong>
-                    <ul>
-                        <li>The browsers defaults, which can be both good and bad. It depends. 😁 </li>
-                        <li>If you're missing the &lt;!DOCTYPE&gt; declaration, the browser will give preference to the
-                            UA!</li>
-                    </ul>
-                </p>
-            </section>
-            <section>
-                <h2>Section 3</h2>
-                <h3>The CSS Box Model (this is an h3)</h3>
-                <p>How big is the container?</p>
-                <ul>
-                    <li>Margin</li>
-                    <li>Border</li>
-                    <li>Padding</li>
-                    <li>Content</li>
-                </ul>
-                <div class="wrapper--image">
-                    <!-- <img> is a self closing tag. -->
-                    <img src="images/css-box-model.png" />
+    <head>
+        <meta charset="utf-8">
+        <title>Boar and the Fox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Stylesheet Link -->
+        <link rel="stylesheet" href="css/index.css">
+        <!--font link-->
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <header class="item site-header">
+                <div class="item logo-big">
+                    <div class="logo">
+                        <h2>The Æsop for Children</h2>
+                        <a href="http://www.read.gov/aesop/013.html"> <-- back</a>
+                        <a href="http://www.read.gov/aesop/015.html">next --></a>
+                    </div>
                 </div>
-            </section>
-            <section>
-                <h3>Cheats:</h3>
-                <ul>
-                    <li>
-                        <a href="https://type-scale.com/" target="_blank">Type Scale</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/"
-                            target="_blank">Inheriting box-sizing Probably Slightly Better Best-Practice</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/snippets/css/system-font-stack/" target="_blank">System Font
-                            Stack
-                            on CSS-Tricks</a>
-                    </li>
-                    <li>
-                        <a href="https://css-tricks.com/rems-ems/" target="_blank">Font Size Idea: px at the Root, rem
-                            for
-                            Components, em for Text Elements</a>
-                    </li>
-                </ul>
-            </section>
-            <aside>
-                <p>Further Reading:</p>
-                <ul>
-                    <li>
-                        <a href="https://css-tricks.com/bem-101/" target="_blank">BEM 101</a>
-                    </li>
-                    <li>
-                        <a href="https://internetingishard.com/html-and-css/css-box-model/#content-padding-border-and-margin"
-                            target="_blank">CSS Box Model @ Interneting is Hard</a>
-                    </li>
-                </ul>
-            </aside>
-        </div>
-    </main>
-    <footer>
-        <h4>Scooby Dooby Doo, where are you? We got some work to do now!</h4>
-        <h5>Scooby Dooby Doo, where are you? We need some help from you now</h5>
-    </footer>
-</body>
-
-</html>
+                <div class="item site-nav"> 
+                    <h5> place dropdown list here pls </h5>
+                </div>
+            </header>
+            <div class="wrapper">
+                
+                <div class="item title">
+                    <h1>The Wild Boar and the Fox</h1>
+                    </div>
+                    <main class="item main-content">
+                    <p>
+                        &emsp; A Wild Boar was sharpening his tusks busily against the stump of a tree, when a Fox happened by. Now the Fox was always looking for a chance to make fun of his neighbors. So he made a great show of looking anxiously about, as if in fear of some hidden enemy. But the Boar kept right on with his work. 
+                    </p>
+                    <p>
+                        &emsp; <em>"Why are you doing that?"</em> asked the Fox at last with a grin. <em>"There isn't any danger that I can see."</em>
+                    </p>
+                    <p>
+                        &emsp;<em>"True enough," </em>replied the Boar, <em>"but when danger does come there will not be time for such work as this. My weapons will have to be ready for use then, or I shall suffer for it."</em>
+                        <br>
+                        <h4>
+                            <em>Preparedness for war is the best guarantee of peace.</em>
+                        </h4>
+                    </p>
+                </main>
+                <div class="item subcontent-1">
+                    <img src="/Users/katysage/DigitalCrafts/practice/week_4/grid/images/foar.png">
+                </div>
+            </div>
+            <footer class="item site-footer">
+                 <a href="http://www.read.gov/aesop/013.html"> <-- back</a>
+                 <!-- this is a placeholder until I make this a flexbox-->
+                 &emsp;&emsp;
+                <a href="http://www.read.gov/aesop/015.html">next --></a>
+            </footer>
+    </body>
+</html> 
